@@ -5,16 +5,28 @@ import { formatEther } from '@ethersproject/units';
 
 function App() {
 
-  const { activateBrowserWallet, account } = useEthers();
+  const {
+    chainId,
+    activateBrowserWallet,
+    account,
+    deactivate
+  } = useEthers();
+
   const etherBalance = useEtherBalance(account);
+
+  // const tokenList = getTokenList(chainId);
+  // const balances = useTokensBalance(tokenList, account);
 
   return (
     <div className="App">
       <div><img src={logo} className="App-logo" alt="logo" /></div>
       <div>
-        <button onClick={() => activateBrowserWallet()}>
-          { account ? 'Re-connect': 'Connect '}
-        </button>
+        {
+          account ?
+            <button onClick={() => deactivate()}>Disconnect</button> :
+            <button onClick={() => activateBrowserWallet()}>Connect</button>
+        }
+
         { account && <p>Account: {account}</p>}
         { etherBalance && <p>Balance: { formatEther(etherBalance) }</p>}
       </div>
