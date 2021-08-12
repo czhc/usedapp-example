@@ -2,6 +2,8 @@
 
 [usedapp.io](https://usedapp.io/)
 
+![Screenshot](./usedapp-example.png)
+
 ## Notes
 
 * `DAppProvider` - wraps application to manage all blockchain connections.
