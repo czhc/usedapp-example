@@ -6,7 +6,7 @@ import { formatEther, formatUnits } from '@ethersproject/units';
 import uniswapToken from '@uniswap/default-token-list'
 
 const getTokenList = (chainId?: ChainId) =>
-    uniswapToken.tokens.filter((token) => token.chainId == chainId)
+    uniswapToken.tokens.filter((token) => token.chainId === chainId)
 
 const useTokensBalance = (tokenList: any[], account?: string | null) =>  {
     return useContractCalls(
@@ -59,7 +59,7 @@ function App() {
             tokenList &&
               tokenList.map((token, idx) => (
                   <tr>
-                    <td><img class="App-Tokens--Icon" src={token.logoURI}/></td>
+                    <td><img class="App-Tokens--Icon" src={token.logoURI} alt={token.name}/></td>
                     <td><span class="App-Tokens--Symbol">{token.symbol}</span></td>
                     <td><span class="App-Tokens--Name">{token.name}</span></td>
                     <td><span>{
