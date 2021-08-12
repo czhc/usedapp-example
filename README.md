@@ -1,6 +1,6 @@
 # useDapp Example
 
-[usedapp.io](https://usedapp.io/)
+Deployed: [usedapp-example.vercel.app](https://usedapp-example.vercel.app/)
 
 ![Screenshot](./usedapp-example.png)
 
@@ -14,6 +14,7 @@
 
 ## References
 
+* [usedapp.io](https://usedapp.io/)
 * [Ethworks Medium](https://medium.com/ethworks/introducing-usedapp-framework-for-rapid-dapp-development-4959361f242a)
 * [useDapp ReadTheDocs](https://usedapp.readthedocs.io/)
 * [ethers/ethersproject docs](https://docs.ethers.io/)
