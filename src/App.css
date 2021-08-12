@@ -1,19 +1,27 @@
 .App {
-  text-align: center;
   padding: 50px ;
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 18px;
   color: white;
-
+  justify-content: center;
+  align-items: center;
 }
 
+.App-Connect {
+  padding:  10px;
+  background-color:  green;
+  border-radius: 0.5em;
+  color:  white;
+}
 .App-logo {
-  height: 40vmin;
+  position:  fixed;
+  margin: 20px;
+  right:  0;
+  top:  0;
+  height: 50px;
   pointer-events: none;
 }
 
@@ -23,6 +31,16 @@
   }
 }
 
+.App-Tokens--Table {
+  width:  100%;
+  text-align: left;
+}
+.App-Tokens--Icon {
+  height:  20px;
+}
+.App-Tokens--Symbol {
+  color:  #FF1493;
+}
 
 @keyframes App-logo-spin {
   from {
